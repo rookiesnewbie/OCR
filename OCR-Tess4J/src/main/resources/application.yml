@@ -1,0 +1,7 @@
+server:
+  port: 80
+
+
+# 训练数据文件夹的路径
+tess4j:
+  dataPath: E:/gitee/OCR/tess4j_data
