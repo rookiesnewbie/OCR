@@ -9,17 +9,15 @@
 
   <name>OCR</name>
   <url>http://maven.apache.org</url>
+  <modules>
+    <module>baidu-ocr</module>
+      <module>Camera</module>
+      <module>OCR-Tess4J</module>
+      <module>aliyun-orc</module>
+      <module>tencent-ocr</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
 </project>
