@@ -2,6 +2,6 @@ server:
   port: 8099
 
 aliyun:
-  KeyId: LTAI5tRdkMTrBDUsSVi74WNN
-  KeySecret: lHPbIV3y1qRxHTcYtb8LhZZMa7DtXx
+  KeyId: **
+  KeySecret: **
   endpoint: ocr-api.cn-hangzhou.aliyuncs.com
