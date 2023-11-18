@@ -1,0 +1,7 @@
+server:
+  port: 8090
+
+baidu:
+  APP_ID: **
+  API_KEY: **
+  SECRET_KEY: **
