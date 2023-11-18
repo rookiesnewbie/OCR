@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Capture</title>
+</head>
+<body>
+    <button id="startButton">打开摄像头</button>
+    <div style="text-align: center">
+        <video id="video" width="640" height="480" autoplay ></video>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const video = document.getElementById('video');
+            const startButton = document.getElementById('startButton');
+
+            // 获取摄像头
+            async function startCamera() {
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                    video.srcObject = stream;
+                } catch (error) {
+                    console.error('Error accessing camera:', error);
+                }
+            }
+
+            // 启动摄像头按钮点击事件
+            startButton.addEventListener('click', () => {
+                startCamera();
+            });
+        });
+    </script>
+</body>
+</html>
